@@ -1,0 +1,14 @@
+# Sukka's Ruleset - Large Files Hosting IPs
+# Last Updated: 2025-10-17T13:08:04.457Z
+# Size: 8
+#
+# This file contains ruleset for software updating & large file hosting.
+#########################################
+payload:
+- DOMAIN-WILDCARD,download*.mediafire.com
+- DOMAIN-WILDCARD,ftp.??.debian.org
+- DOMAIN-WILDCARD,ftp.??.freebsd.org
+- DOMAIN-WILDCARD,*.s3.*.backblazeb2.com
+- DOMAIN-WILDCARD,cdn-*.comaps.app
+- DOMAIN-WILDCARD,cdn-*.comaps.tech
+- DOMAIN-WILDCARD,cdn-*.organicmaps.app

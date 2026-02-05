@@ -1,0 +1,27 @@
+# Sukka's Ruleset - Reject And Drop
+# Last Updated: 2026-02-05T17:38:47.617Z
+# Size: 21
+#
+# This file This file contains rules for domain should be used with REJECT-DROP policy.
+#########################################
+payload:
+- DOMAIN-SUFFIX,undefined
+- DOMAIN-SUFFIX,null
+- DOMAIN-SUFFIX,telemetry.mozilla.org
+- DOMAIN,stats.grafana.org
+- DOMAIN-SUFFIX,getui.net
+- DOMAIN,nom.telemetrydeck.com
+- DOMAIN-SUFFIX,easytomessage.com
+- DOMAIN-SUFFIX,slackb.com
+- DOMAIN-SUFFIX,gepush.com
+- DOMAIN-SUFFIX,getui.com
+- DOMAIN-SUFFIX,in.applicationinsights.azure.com
+- DOMAIN-SUFFIX,geo2.adobe.com
+- DOMAIN-SUFFIX,tracking.miui.com
+- DOMAIN-SUFFIX,tracking.intl.miui.com
+- DOMAIN-SUFFIX,beacon.qq.com
+- DOMAIN-SUFFIX,trace.qq.com
+- DOMAIN,stat.youpin.mi.com
+- DOMAIN-SUFFIX,f-log-extension.grammarly.io
+- DOMAIN-SUFFIX,jpush.io
+- DOMAIN-SUFFIX,jpush.cn

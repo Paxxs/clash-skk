@@ -1,0 +1,19 @@
+# Sukka's Ruleset - Sogou Input
+# Last Updated: 2025-07-21T08:09:50.408Z
+# Size: 13
+#
+# This file contains rules for Sogou Input.
+#########################################
+payload:
+- DOMAIN-SUFFIX,account.sogou.com
+- DOMAIN-SUFFIX,shouji.sogou.com
+- DOMAIN-SUFFIX,pinyin.sogou.com
+- DOMAIN-SUFFIX,macime.sogou.com
+- DOMAIN-SUFFIX,ime.sogou.com
+- DOMAIN-SUFFIX,get.sogou.com
+- DOMAIN-SUFFIX,sginput.qq.com
+- DOMAIN-SUFFIX,beacon.qq.com
+- DOMAIN,oth.str.mdt.qq.com
+- PROCESS-NAME,SogouInput
+- PROCESS-NAME,SogouTaskManager
+- PROCESS-NAME,SogouServices

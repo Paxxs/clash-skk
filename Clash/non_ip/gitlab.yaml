@@ -1,0 +1,8 @@
+# Sukka's Ruleset - GitLab
+# Last Updated: 2025-07-21T08:09:50.383Z
+# Size: 2
+#
+# GitLab forbids usage from CN, HK, MO. This file contains ruleset for GitLab.
+#########################################
+payload:
+- DOMAIN-SUFFIX,gitlab.com
