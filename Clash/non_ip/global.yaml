@@ -1,6 +1,6 @@
 # Sukka's Ruleset - General Global Services
-# Last Updated: 2026-01-29T13:28:35.717Z
-# Size: 1239
+# Last Updated: 2026-02-15T11:26:13.865Z
+# Size: 1249
 #
 # This file contains rules for services that are NOT available inside the Mainland China.
 #########################################
@@ -1043,7 +1043,17 @@ payload:
 - DOMAIN-SUFFIX,us
 - DOMAIN-SUFFIX,uk
 - DOMAIN-SUFFIX,tw
-- DOMAIN-SUFFIX,tv
+- DOMAIN-SUFFIX,cloudflare.tv
+- DOMAIN-SUFFIX,periscope.tv
+- DOMAIN-SUFFIX,cableav.tv
+- DOMAIN-SUFFIX,twitch.tv
+- DOMAIN-SUFFIX,hanime.tv
+- DOMAIN-SUFFIX,jable.tv
+- DOMAIN-SUFFIX,iwara.tv
+- DOMAIN-SUFFIX,pscp.tv
+- DOMAIN-SUFFIX,njav.tv
+- DOMAIN-SUFFIX,muku.tv
+- DOMAIN-SUFFIX,bgm.tv
 - DOMAIN-SUFFIX,tt
 - DOMAIN-SUFFIX,tr
 - DOMAIN-SUFFIX,to
