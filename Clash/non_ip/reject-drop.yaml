@@ -1,5 +1,5 @@
 # Sukka's Ruleset - Reject And Drop
-# Last Updated: 2026-02-21T17:17:13.887Z
+# Last Updated: 2026-02-22T14:12:51.225Z
 # Size: 21
 #
 # This file This file contains rules for domain should be used with REJECT-DROP policy.
@@ -22,6 +22,6 @@ payload:
 - DOMAIN-SUFFIX,beacon.qq.com
 - DOMAIN-SUFFIX,trace.qq.com
 - DOMAIN,stat.youpin.mi.com
-- DOMAIN-SUFFIX,f-log-extension.grammarly.io
 - DOMAIN-SUFFIX,jpush.io
 - DOMAIN-SUFFIX,jpush.cn
+- DOMAIN-WILDCARD,f-log*.grammarly.io
