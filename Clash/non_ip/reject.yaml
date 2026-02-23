@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Reject Non-IP
-# Last Updated: 2026-02-04T09:55:48.690Z
-# Size: 363
+# Last Updated: 2026-02-23T07:22:35.277Z
+# Size: 366
 #
 # The ruleset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
 #
@@ -73,6 +73,8 @@ payload:
 - DOMAIN,stun.smartgslb.com
 - DOMAIN-SUFFIX,notifysrv.com
 - DOMAIN-SUFFIX,newzgames.com
+- DOMAIN,ttnet-doh.larksuite.com
+- DOMAIN,ttnet-dig.larksuite.com
 - DOMAIN-SUFFIX,brightvpn.com
 - DOMAIN,httpdns.bilivideo.com
 - DOMAIN-SUFFIX,amplitude.com
@@ -207,6 +209,7 @@ payload:
 - DOMAIN-KEYWORD,fb-business-appeal
 - DOMAIN-KEYWORD,cp-home-pl-
 - DOMAIN-KEYWORD,tlauncher
+- DOMAIN-KEYWORD,packetsdk
 - DOMAIN-KEYWORD,this_rule_set_is_made_by_sukkaw
 - DOMAIN-KEYWORD,umeng
 - DOMAIN-KEYWORD,adsby
