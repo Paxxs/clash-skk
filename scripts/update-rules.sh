@@ -39,9 +39,11 @@ PY
 )
 
 while IFS= read -r path; do
+  make_domain_classical_copy=0
   case "$path" in
     /Clash/domainset/*)
       rule_type="domain"
+      make_domain_classical_copy=1
       ;;
     /Clash/non_ip/*)
       rule_type="classic"
@@ -59,4 +61,13 @@ while IFS= read -r path; do
   echo $output_path
   mkdir -p "$(dirname "$output_path")"
   "$BIN_PATH" -t "$rule_type" -u "${ROOT_URL}${path}" -o "$output_path"
+
+  # For Shadowrocket compatibility, domainset rules need an extra classical copy.
+  if [[ "$make_domain_classical_copy" == "1" ]]; then
+    name="$(basename "${path%.txt}")"
+    classical_output_path="${OUT_DIR%/}/Clash/non_ip/${name}_classical.yaml"
+    echo "$classical_output_path"
+    mkdir -p "$(dirname "$classical_output_path")"
+    "$BIN_PATH" -t "domain-classical" -u "${ROOT_URL}${path}" -o "$classical_output_path"
+  fi
 done <<< "$links"

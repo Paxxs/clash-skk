@@ -10,14 +10,16 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"time"
 )
 
 const (
-	ruleTypeClassic = "classic"
-	ruleTypeDomain  = "domain"
-	ruleTypeIPCIDR  = "ipcidr"
+	ruleTypeClassic         = "classic"
+	ruleTypeDomain          = "domain"
+	ruleTypeDomainClassical = "domain-classical"
+	ruleTypeIPCIDR          = "ipcidr"
 )
 
 func main() {
@@ -25,7 +27,7 @@ func main() {
 	var sourceURL string
 	var outputPath string
 
-	flag.StringVar(&ruleType, "t", "", "rule type: classic, domain, ipcidr")
+	flag.StringVar(&ruleType, "t", "", "rule type: classic, domain, domain-classical, ipcidr")
 	flag.StringVar(&sourceURL, "u", "", "source url")
 	flag.StringVar(&outputPath, "o", "", "output file path")
 	flag.Parse()
@@ -38,11 +40,14 @@ func main() {
 
 func run(ruleType, sourceURL, outputPath string) error {
 	if ruleType == "" || sourceURL == "" || outputPath == "" {
-		usage := "usage: clash-skk -t classic|domain|ipcidr -u <url> -o <output>"
+		usage := "usage: clash-skk -t classic|domain|domain-classical|ipcidr -u <url> -o <output>"
 		return errors.New(usage)
 	}
 
-	if ruleType != ruleTypeClassic && ruleType != ruleTypeDomain && ruleType != ruleTypeIPCIDR {
+	if ruleType != ruleTypeClassic &&
+		ruleType != ruleTypeDomain &&
+		ruleType != ruleTypeDomainClassical &&
+		ruleType != ruleTypeIPCIDR {
 		return fmt.Errorf("unknown rule type: %s", ruleType)
 	}
 
@@ -64,6 +69,9 @@ func run(ruleType, sourceURL, outputPath string) error {
 	case ruleTypeDomain:
 		header, payload := parseDomain(lines)
 		output = buildYAML(header, payload, true)
+	case ruleTypeDomainClassical:
+		header, payload := parseDomainAsClassic(lines, os.Stderr)
+		output = buildYAMLItems(header, payload, false)
 	case ruleTypeIPCIDR:
 		payload := parseIPCIDR(lines)
 		output = buildYAML(nil, payload, true)
@@ -136,11 +144,135 @@ func parseDomain(lines []string) ([]string, []string) {
 		if trimmed == "" {
 			return "", false
 		}
-		if strings.HasPrefix(trimmed, "+.") {
-			trimmed = "." + strings.TrimPrefix(trimmed, "+.")
+		// if strings.HasPrefix(trimmed, "+.") {
+		// 	trimmed = "." + strings.TrimPrefix(trimmed, "+.")
+		// }
+		return trimmed, true
+	})
+}
+
+type payloadItem struct {
+	Value     string
+	IsComment bool
+}
+
+func parseDomainAsClassic(lines []string, warnWriter io.Writer) ([]string, []payloadItem) {
+	header, payload := parseWithHeader(lines, func(line string) (string, bool) {
+		trimmed := strings.TrimSpace(line)
+		if trimmed == "" {
+			return "", false
 		}
 		return trimmed, true
 	})
+
+	converted := make([]payloadItem, 0, len(payload))
+	for _, rule := range payload {
+		// Unknown syntax should not break conversion; keep order by emitting a YAML comment line.
+		classicalRule, ok := convertDomainRuleToClassic(rule)
+		if !ok {
+			converted = append(converted, payloadItem{
+				Value:     "# unsupported domain rule: " + rule,
+				IsComment: true,
+			})
+			if warnWriter != nil {
+				fmt.Fprintf(warnWriter, "warn: unsupported domain rule %q, wrote comment and continue\n", rule)
+			}
+			continue
+		}
+		converted = append(converted, payloadItem{Value: classicalRule})
+	}
+
+	return header, converted
+}
+
+func convertDomainRuleToClassic(rule string) (string, bool) {
+	trimmed := strings.TrimSpace(rule)
+	if trimmed == "" {
+		return "", false
+	}
+
+	if strings.ContainsAny(trimmed, " \t,") || strings.Contains(trimmed, "://") {
+		return "", false
+	}
+
+	// +.example.com -> DOMAIN-SUFFIX,example.com
+	if strings.HasPrefix(trimmed, "+.") {
+		baseDomain := strings.TrimPrefix(trimmed, "+.")
+		if !isDomainToken(baseDomain) {
+			return "", false
+		}
+		return "DOMAIN-SUFFIX," + baseDomain, true
+	}
+
+	// .example.com -> DOMAIN-WILDCARD,*.example.com
+	if strings.HasPrefix(trimmed, ".") {
+		baseDomain := strings.TrimPrefix(trimmed, ".")
+		if !isDomainToken(baseDomain) {
+			return "", false
+		}
+		return "DOMAIN-WILDCARD,*." + baseDomain, true
+	}
+
+	// *-events.adjust.com -> DOMAIN-KEYWORD,-events.adjust.com
+	if strings.HasPrefix(trimmed, "*-") {
+		keyword := strings.TrimPrefix(trimmed, "*")
+		if !isDomainToken(keyword) {
+			return "", false
+		}
+		return "DOMAIN-KEYWORD," + keyword, true
+	}
+
+	// *.baidu.com / xbox.*.microsoft.com -> DOMAIN-REGEX,...
+	if strings.Contains(trimmed, "*") {
+		regexRule, ok := wildcardDomainPatternToRegex(trimmed)
+		if !ok {
+			return "", false
+		}
+		return "DOMAIN-REGEX," + regexRule, true
+	}
+
+	// example.com -> DOMAIN,example.com
+	if !isDomainToken(trimmed) {
+		return "", false
+	}
+	return "DOMAIN," + trimmed, true
+}
+
+func wildcardDomainPatternToRegex(pattern string) (string, bool) {
+	parts := strings.Split(pattern, "*")
+	if len(parts) < 2 {
+		return "", false
+	}
+
+	var out strings.Builder
+	out.WriteString("^")
+	for i, part := range parts {
+		if part != "" {
+			if !isDomainToken(part) {
+				return "", false
+			}
+			out.WriteString(regexp.QuoteMeta(part))
+		}
+		if i < len(parts)-1 {
+			out.WriteString("[^.]+")
+		}
+	}
+	out.WriteString("$")
+	return out.String(), true
+}
+
+func isDomainToken(value string) bool {
+	if value == "" {
+		return false
+	}
+	for _, r := range value {
+		isLetter := r >= 'a' && r <= 'z' || r >= 'A' && r <= 'Z'
+		isDigit := r >= '0' && r <= '9'
+		if !isLetter && !isDigit && r != '.' && r != '-' {
+			return false
+		}
+	}
+	return true
 }
 
 func parseIPCIDR(lines []string) []string {
@@ -213,6 +345,14 @@ func parseWithHeader(lines []string, transform func(string) (string, bool)) ([]s
 }
 
 func buildYAML(header []string, payload []string, quote bool) string {
+	items := make([]payloadItem, 0, len(payload))
+	for _, item := range payload {
+		items = append(items, payloadItem{Value: item})
+	}
+	return buildYAMLItems(header, items, quote)
+}
+
+func buildYAMLItems(header []string, payload []payloadItem, quote bool) string {
 	var buf bytes.Buffer
 	for _, line := range header {
 		buf.WriteString(line)
@@ -220,14 +360,19 @@ func buildYAML(header []string, payload []string, quote bool) string {
 	}
 	buf.WriteString("payload:\n")
 	for _, item := range payload {
+		if item.IsComment {
+			buf.WriteString(item.Value)
+			buf.WriteByte('\n')
+			continue
+		}
 		if quote {
 			buf.WriteString("- '")
-			buf.WriteString(escapeSingleQuotes(item))
+			buf.WriteString(escapeSingleQuotes(item.Value))
 			buf.WriteString("'\n")
 			continue
 		}
 		buf.WriteString("- ")
-		buf.WriteString(item)
+		buf.WriteString(item.Value)
 		buf.WriteByte('\n')
 	}
 	return buf.String()
