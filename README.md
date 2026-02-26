@@ -24,12 +24,14 @@ Sukka Ruleset 只提供 txt 版本规则。subconverter 转换时不会为 rule 
 | `Clash/ip/`        | `classical` 或 `ipcidr` | IP 相关规则组，会触发 DNS 解析  |
 
 > 按 `domainset`、`non_ip`、`ip` 的顺序引入规则组，避免不必要的 DNS 解析。
+> 如需兼容 Shadowrocket，可将 domain 规则改为 `behavior: classical`，并改用 `Clash/non_ip/*_classical.yaml`。
 
 ## 命令行使用
 
 ```bash
 clash-skk -t classic -u https://ruleset.skk.moe/Clash/non_ip/reject-no-drop.txt -o Clash/non_ip/reject-no-drop.yaml
 clash-skk -t domain  -u https://ruleset.skk.moe/Clash/domainset/reject.txt -o Clash/domainset/reject.yaml
+clash-skk -t domain-classical -u https://ruleset.skk.moe/Clash/domainset/reject.txt -o Clash/non_ip/reject_classical.yaml
 clash-skk -t ipcidr  -u https://ruleset.skk.moe/Clash/ip/china_ip.txt -o Clash/ip/china_ip.yaml
 ```
 
@@ -62,15 +64,23 @@ rule-providers:
   reject_domainset:
     type: http
     behavior: domain
+    # Shadowrocket 兼容写法：
+    # behavior: classical
     interval: 43200
     url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/domainset/reject.yaml
+    # url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/non_ip/reject_classical.yaml
     path: ./sukkaw_ruleset/reject_domainset.yaml
+    # path: ./sukkaw_ruleset/reject_domainset_classical.yaml
   reject_extra_domainset:
     type: http
     behavior: domain
+    # Shadowrocket 兼容写法：
+    # behavior: classical
     interval: 43200
     url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/domainset/reject_extra.yaml
+    # url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/non_ip/reject_extra_classical.yaml
     path: ./sukkaw_ruleset/reject_extra_domainset.yaml
+    # path: ./sukkaw_ruleset/reject_extra_domainset_classical.yaml
   reject_ip:
     type: http
     behavior: classical
@@ -109,12 +119,33 @@ rule-providers:
   speedtest:
     type: http
     behavior: domain
+    # Shadowrocket 兼容写法：
+    # behavior: classical
     interval: 43200
     url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/domainset/speedtest.yaml
+    # url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/non_ip/speedtest_classical.yaml
     path: ./sukkaw_ruleset/speedtest.yaml
+    # path: ./sukkaw_ruleset/speedtest_classical.yaml
 
 rules:
   - RULE-SET,speedtest,[Replace with your policy]
+```
+
+### Speedtest 测速域名（小火箭兼容 classical）
+
+> 保留上面的 `behavior: domain` 示例不变；如果需要兼容 Shadowrocket，可额外使用 `*_classical.yaml`。
+
+```yaml
+rule-providers:
+  speedtest_classical:
+    type: http
+    behavior: classical
+    interval: 43200
+    url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/non_ip/speedtest_classical.yaml
+    path: ./sukkaw_ruleset/speedtest_classical.yaml
+
+rules:
+  - RULE-SET,speedtest_classical,[Replace with your policy]
 ```
 
 ### 常见静态 CDN
@@ -124,9 +155,13 @@ rule-providers:
   cdn_domainset:
     type: http
     behavior: domain
+    # Shadowrocket 兼容写法：
+    # behavior: classical
     interval: 43200
     url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/domainset/cdn.yaml
+    # url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/non_ip/cdn_classical.yaml
     path: ./sukkaw_ruleset/cdn_domainset.yaml
+    # path: ./sukkaw_ruleset/cdn_domainset_classical.yaml
   cdn_non_ip:
     type: http
     behavior: classical
@@ -296,9 +331,13 @@ rule-providers:
   apple_cdn:
     type: http
     behavior: domain
+    # Shadowrocket 兼容写法：
+    # behavior: classical
     interval: 43200
     url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/domainset/apple_cdn.yaml
+    # url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/non_ip/apple_cdn_classical.yaml
     path: ./sukkaw_ruleset/apple_cdn.yaml
+    # path: ./sukkaw_ruleset/apple_cdn_classical.yaml
 
 rules:
   - RULE-SET,apple_cdn,[Replace with your policy]
@@ -393,9 +432,13 @@ rule-providers:
   download_domainset:
     type: http
     behavior: domain
+    # Shadowrocket 兼容写法：
+    # behavior: classical
     interval: 43200
     url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/domainset/download.yaml
+    # url: https://cdn.jsdelivr.net/gh/Paxxs/clash-skk@main/Clash/non_ip/download_classical.yaml
     path: ./sukkaw_ruleset/download_domainset.yaml
+    # path: ./sukkaw_ruleset/download_domainset_classical.yaml
   download_non_ip:
     type: http
     behavior: classical
