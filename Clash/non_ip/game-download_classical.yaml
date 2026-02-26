@@ -1,0 +1,61 @@
+# Sukka's Ruleset - Game Download
+# Last Updated: 2025-07-21T08:09:50.367Z
+# Size: 54
+#
+# This file contains domains for Gam download CDN domains for Steam, Epic, Blizzard, Gog, Ubisoft, EA, Xbox, PlayStation, Riot, Bethesda and more.
+# No China CDN domains are included. Those domains are included in non_ip/domestic
+#########################################
+payload:
+- DOMAIN-SUFFIX,steamserver.net
+- DOMAIN-SUFFIX,dl.playstation.net
+- DOMAIN,pf-cdn-content-prod.azureedge.net
+- DOMAIN,gamedownloads-rockstargames-com.akamaized.net
+- DOMAIN,epicgames-download1.akamaized.net
+- DOMAIN,steampipe-partner.akamaized.net
+- DOMAIN,steampipe-kr.akamaized.net
+- DOMAIN,steampipe.akamaized.net
+- DOMAIN-SUFFIX,wup.eshop.nintendo.net
+- DOMAIN-SUFFIX,wup.shop.nintendo.net
+- DOMAIN-SUFFIX,cdn.nintendo.net
+- DOMAIN-SUFFIX,download.cdp.bethesda.net
+- DOMAIN-SUFFIX,content.cdp.bethesda.net
+- DOMAIN,dlgarenanow-a.akamaihd.net
+- DOMAIN,blzddistkr1-a.akamaihd.net
+- DOMAIN,blzddist3-a.akamaihd.net
+- DOMAIN,blzddist2-a.akamaihd.net
+- DOMAIN,blzddist1-a.akamaihd.net
+- DOMAIN,origin-a.akamaihd.net
+- DOMAIN-SUFFIX,dyn.riotcdn.net
+- DOMAIN,edge.steam-dns.top.comcast.net
+- DOMAIN,content-origin.steampowered.com
+- DOMAIN-SUFFIX,content.steampowered.com
+- DOMAIN-SUFFIX,steamcontent.com
+- DOMAIN-SUFFIX,epicgamescdn.com
+- DOMAIN-SUFFIX,egdownload.fastly-edge.com
+- DOMAIN,fastly-download.epicgames.com
+- DOMAIN,download4.epicgames.com
+- DOMAIN,download3.epicgames.com
+- DOMAIN,download2.epicgames.com
+- DOMAIN-SUFFIX,download.epicgames.com
+- DOMAIN,packagespc.xboxlive.com
+- DOMAIN,assets2.xboxlive.com
+- DOMAIN,assets1.xboxlive.com
+- DOMAIN,xvcf2.xboxlive.com
+- DOMAIN,xvcf1.xboxlive.com
+- DOMAIN,level3.blizzard.com
+- DOMAIN,dist.blizzard.com
+- DOMAIN-SUFFIX,cdn.blizzard.com
+- DOMAIN,steam.naeu.qtlglb.com
+- DOMAIN,steam.apac.qtlglb.com
+- DOMAIN,steam.eca.qtlglb.com
+- DOMAIN,steam.ru.qtlglb.com
+- DOMAIN-SUFFIX,download.dm.origin.com
+- DOMAIN,cdn-patch.swtor.com
+- DOMAIN,download.xbox.com
+- DOMAIN-SUFFIX,cdn.ubi.com
+- DOMAIN,gog-cdn-fastly-cp77.gog.com
+- DOMAIN,gog-cdn-fastly.gog.com
+- DOMAIN-SUFFIX,cdn.ea.com
+- DOMAIN,blizzard.gcdn.cloudn.co.kr
+- DOMAIN,download.hikarifield.co.jp
+- DOMAIN,client.hikarifield.co.jp

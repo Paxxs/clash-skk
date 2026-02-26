@@ -1,0 +1,33 @@
+# Sukka's Ruleset - Always Real IP Plus
+# Last Updated: 2025-01-10T15:40:10.906Z
+# Size: 27
+#
+# Clash.Meta fake-ip-filter as ruleset
+#########################################
+payload:
+- DOMAIN-SUFFIX,lan
+- DOMAIN-SUFFIX,m2m
+- DOMAIN-SUFFIX,bogon
+- DOMAIN-SUFFIX,localdomain
+- DOMAIN-SUFFIX,home.arpa
+- DOMAIN,local.adguard.org
+- DOMAIN,injections.adguard.org
+- DOMAIN-SUFFIX,10.in-addr.arpa
+- DOMAIN-SUFFIX,254.169.in-addr.arpa
+- DOMAIN-SUFFIX,16.172.in-addr.arpa
+- DOMAIN-SUFFIX,17.172.in-addr.arpa
+- DOMAIN-SUFFIX,18.172.in-addr.arpa
+- DOMAIN-SUFFIX,19.172.in-addr.arpa
+- DOMAIN-SUFFIX,20.172.in-addr.arpa
+- DOMAIN-SUFFIX,21.172.in-addr.arpa
+- DOMAIN-SUFFIX,22.172.in-addr.arpa
+- DOMAIN-SUFFIX,23.172.in-addr.arpa
+- DOMAIN-SUFFIX,24.172.in-addr.arpa
+- DOMAIN-SUFFIX,25.172.in-addr.arpa
+- DOMAIN-SUFFIX,26.172.in-addr.arpa
+- DOMAIN-SUFFIX,27.172.in-addr.arpa
+- DOMAIN-SUFFIX,28.172.in-addr.arpa
+- DOMAIN-SUFFIX,29.172.in-addr.arpa
+- DOMAIN-SUFFIX,30.172.in-addr.arpa
+- DOMAIN-SUFFIX,31.172.in-addr.arpa
+- DOMAIN-SUFFIX,168.192.in-addr.arpa
