@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Speedtest Domains
-# Last Updated: 2026-03-16T06:19:01.126Z
-# Size: 2931
+# Last Updated: 2026-03-17T04:30:49.687Z
+# Size: 2952
 #
 # This file contains common speedtest endpoints.
 #########################################
@@ -325,6 +325,7 @@ payload:
 - DOMAIN,speedtest.nikhef.qonnected.net
 - DOMAIN,speedtest.prometeus.net
 - DOMAIN,speedtest.progetto8.net
+- DOMAIN,speedtest-preston-wv.prodigiwv.net
 - DOMAIN,speedtest-lax.perfectip.net
 - DOMAIN,speedgauge2.optonline.net
 - DOMAIN,speedtest-utc.northland.net
@@ -866,6 +867,11 @@ payload:
 - DOMAIN,speedtest.pnb.vodafoneidea.com
 - DOMAIN,speedtest.mum.vodafoneidea.com
 - DOMAIN,speedtest.har.vodafoneidea.com
+- DOMAIN,yjl-speed.twmbroadband.com
+- DOMAIN,phc-speed.twmbroadband.com
+- DOMAIN,mct-speed.twmbroadband.com
+- DOMAIN,gvc-speed.twmbroadband.com
+- DOMAIN,hl-speed.twmbroadband.com
 - DOMAIN,speedtest.telecaravaca.com
 # unsupported domain rule: spttp1_tc.taiwanmobile.com
 # unsupported domain rule: sptkh1_tc.taiwanmobile.com
@@ -1638,10 +1644,22 @@ payload:
 - DOMAIN-SUFFIX,speedtest.idv.tw
 - DOMAIN,speedtestookla.hya.tw
 - DOMAIN,tnookla.tn.edu.tw
+- DOMAIN,speed.cable-giant.com.tw
 - DOMAIN,speedtest1.taipeinet.com.tw
 - DOMAIN,speedtest.dongfong.com.tw
 - DOMAIN,speedtest.taifo.com.tw
 - DOMAIN,speedtest.twds.com.tw
+- DOMAIN,yms-speed.kbro.com.tw
+- DOMAIN,nty-speed.kbro.com.tw
+- DOMAIN,ntp-speed.kbro.com.tw
+- DOMAIN,ncc-speed.kbro.com.tw
+- DOMAIN,uc-speed.kbro.com.tw
+- DOMAIN,tc-speed.kbro.com.tw
+- DOMAIN,nt-speed.kbro.com.tw
+- DOMAIN,ks-speed.kbro.com.tw
+- DOMAIN,kp-speed.kbro.com.tw
+- DOMAIN,da-speed.kbro.com.tw
+- DOMAIN,ct-speed.kbro.com.tw
 - DOMAIN,speedtest.host.com.tw
 - DOMAIN-SUFFIX,speedtest.aptg.com.tw
 - DOMAIN,speedtest.vee.com.tw
@@ -1990,6 +2008,8 @@ payload:
 - DOMAIN,st-be-rm2.infra.garr.it
 - DOMAIN,st-be-bo1.infra.garr.it
 - DOMAIN,st-be-ba1.infra.garr.it
+- DOMAIN,st-be.bo1.infra.garr.it
+- DOMAIN,st-be.ba1.infra.garr.it
 - DOMAIN,test.eolo.it
 - DOMAIN,two.speed.airc.it
 - DOMAIN,speedtest.4isp.it
@@ -2114,6 +2134,7 @@ payload:
 - DOMAIN,speedtest.netfix.org.in
 - DOMAIN,speedtest.megahertz.net.in
 - DOMAIN,speed.malang.net.in
+- DOMAIN,speedtest.jetair.net.in
 - DOMAIN,speedtest.fastel.net.in
 - DOMAIN,speedtest.e-net.net.in
 - DOMAIN,speedtest.wnet.net.in
