@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-03-30T17:43:33.291Z
-# Size: 4424
+# Last Updated: 2026-03-31T15:36:18.442Z
+# Size: 4429
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -2049,6 +2049,7 @@ payload:
 - DOMAIN-SUFFIX,gitmirror.com
 - DOMAIN-SUFFIX,assets.getpocket.com
 - DOMAIN,i.geekflare.com
+- DOMAIN-SUFFIX,garmincdn.com
 - DOMAIN,mosaic-blender.fxtwitter.com
 - DOMAIN,mosaic.fxtwitter.com
 - DOMAIN,webp.frostming.com
@@ -3138,6 +3139,10 @@ payload:
 - DOMAIN,raw.github.com
 - DOMAIN-SUFFIX,pkg.github.com
 - DOMAIN,assets.genius.com
+- DOMAIN,static.garmin.com
+- DOMAIN,fonts.garmin.com
+- DOMAIN,res.garmin.com
+- DOMAIN,share-assets.fe.garmin.com
 - DOMAIN-SUFFIX,fw-cdn.com
 - DOMAIN-SUFFIX,fsvod1.com
 - DOMAIN,assets.foxdcg.com
