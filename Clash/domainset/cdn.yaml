@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-04-01T04:19:41.481Z
-# Size: 4431
+# Last Updated: 2026-04-02T12:46:50.308Z
+# Size: 4434
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -15,6 +15,7 @@ payload:
 - 'api.web3.storage'
 - '+.cdn.neustar'
 - '+.mangadex.network'
+- 'assets.tangled.network'
 - '+.ipfs.eth.aragon.network'
 - '+.gateway.serph.network'
 - '+.cdnjs.network'
@@ -3807,12 +3808,14 @@ payload:
 - '+.gitapp.si'
 - '+.gcr.si'
 - 'assets.vantage.sh'
+- 'avatar.tangled.sh'
 - 'cdn.cracked.sh'
 - 'api-frameworks.vercel.sh'
 - 'gitpkg-fork.vercel.sh'
 - 'openapi.vercel.sh'
 - 's3.doujin.sh'
 - '+.surge.sh'
+- '+.gateway.scarf.sh'
 - 'static.scarf.sh'
 - 'proxy.cors.sh'
 - 'brew.sh'
