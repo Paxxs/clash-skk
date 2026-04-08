@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-03-23T13:01:59.231Z
-# Size: 84
+# Last Updated: 2026-04-08T12:05:27.745Z
+# Size: 85
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -57,6 +57,7 @@ payload:
 - DOMAIN-WILDCARD,th-*.pornone.com
 - DOMAIN-WILDCARD,s???.pornone.com
 - DOMAIN-WILDCARD,*-intake-*-datadoghq.com
+- DOMAIN-WILDCARD,*-intake.*.datadoghq.com
 - DOMAIN-WILDCARD,video-thumbnail2.fc2.com
 - DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
 - DOMAIN-WILDCARD,video-thumbnail?.liaoningmovie.net
