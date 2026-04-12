@@ -1,6 +1,6 @@
 # Sukka's Ruleset - General Global Services
-# Last Updated: 2026-04-08T15:31:17.833Z
-# Size: 1251
+# Last Updated: 2026-04-12T09:54:14.567Z
+# Size: 1252
 #
 # This file contains rules for services that are NOT available inside the Mainland China.
 #########################################
@@ -36,6 +36,7 @@ payload:
 - DOMAIN-SUFFIX,ground.news
 - DOMAIN-SUFFIX,bad.news
 - DOMAIN-SUFFIX,vercel.live
+- DOMAIN-SUFFIX,magic.link
 - DOMAIN-SUFFIX,page.link
 - DOMAIN-SUFFIX,dweb.link
 - DOMAIN-SUFFIX,nyaa.land

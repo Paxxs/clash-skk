@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Reject No Drop
-# Last Updated: 2026-03-10T05:42:43.354Z
-# Size: 42
+# Last Updated: 2026-04-12T09:54:14.732Z
+# Size: 43
 #
 # This file This file contains rules for domain should be used with REJECT-NO-DROP policy.
 #########################################
@@ -31,6 +31,7 @@ payload:
 - DOMAIN-SUFFIX,p2pupgrade.gamedl.qq.com
 - DOMAIN-SUFFIX,p2pupdate.gamedl.qq.com
 - DOMAIN-SUFFIX,p2p.qq.com
+- DOMAIN-SUFFIX,mountaintoys.cn
 - DOMAIN-SUFFIX,cdnnodedns.cn
 - DOMAIN-SUFFIX,mcdn.bilivideo.cn
 - DOMAIN-SUFFIX,p2perrorlog.douyucdn.cn
