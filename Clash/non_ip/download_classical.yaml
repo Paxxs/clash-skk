@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Large Files Hosting Domains
-# Last Updated: 2026-04-13T10:30:25.912Z
-# Size: 1916
+# Last Updated: 2026-04-16T09:46:44.667Z
+# Size: 1915
 #
 # This file contains domains for software updating & large file hosting.
 #########################################
@@ -264,7 +264,6 @@ payload:
 - DOMAIN-SUFFIX,mirrors.lucidnetworks.net
 - DOMAIN,fdroid.tetaneutral.net
 - DOMAIN,ctan.tetaneutral.net
-- DOMAIN,cpan.tetaneutral.net
 - DOMAIN,apt.tetaneutral.net
 - DOMAIN,downloads.sourceforge.net
 - DOMAIN-SUFFIX,dl.sourceforge.net
@@ -522,7 +521,6 @@ payload:
 - DOMAIN,ftp.ussg.iu.edu
 - DOMAIN,mirror.digitaloceans.dev
 - DOMAIN,download.clashverge.dev
-- DOMAIN,drive.massgrave.dev
 - DOMAIN,dl.getaurora.dev
 - DOMAIN,cdn-updates.orbstack.dev
 - DOMAIN,api-updates.orbstack.dev
@@ -630,8 +628,6 @@ payload:
 - DOMAIN,mirror.downloadvn.com
 - DOMAIN,linux.domainesia.com
 - DOMAIN,cpan.develooper.com
-- DOMAIN,mirror.datapacket.com
-- DOMAIN,mirror.nl.datapacket.com
 - DOMAIN,pkg.cloudflare.com
 - DOMAIN-SUFFIX,swupdate.chaosgroup.com
 - DOMAIN-SUFFIX,mirror.cdnetworks.com
@@ -1095,8 +1091,8 @@ payload:
 - DOMAIN-SUFFIX,ks3-cn-hk-1.ksyuncs.com
 - DOMAIN-SUFFIX,ks3-sgp.ksyuncs.com
 - DOMAIN-SUFFIX,ks3-rus.ksyuncs.com
+- DOMAIN,fw.gl-inet.com
 - DOMAIN,mirrors.gigenet.com
-- DOMAIN,mirror.ghproxy.com
 - DOMAIN,download.fosshub.com
 - DOMAIN,mirror.fjordos.com
 - DOMAIN,rsync.fjordos.com
@@ -1168,7 +1164,6 @@ payload:
 - DOMAIN-SUFFIX,dl.dlsite.com
 - DOMAIN,downloads.cursor.com
 - DOMAIN,download.beeper.com
-- DOMAIN,mirror.anigil.com
 - DOMAIN,mirrors.aliyun.com
 - DOMAIN,mirror.0x626b.com
 - DOMAIN,downloads.xrite.com
@@ -1258,7 +1253,6 @@ payload:
 - DOMAIN,ubuntu.repo.cure.edu.uy
 - DOMAIN,debian.repo.cure.edu.uy
 - DOMAIN,cdn.electronic.us
-- DOMAIN,mirror.timkevin.us
 - DOMAIN,cdn.zoom.us
 - DOMAIN,mirrors.xtom.us
 - DOMAIN,mirror.xtom.us
@@ -1301,6 +1295,8 @@ payload:
 - DOMAIN,ftp.tc.edu.tw
 - DOMAIN,mirrors.yuntu.com.tw
 - DOMAIN,cisco.yuntu.com.tw
+- DOMAIN,mirror6.twds.com.tw
+- DOMAIN,mirror4.twds.com.tw
 - DOMAIN,mirror.twds.com.tw
 - DOMAIN,ftp.linux.org.tr
 - DOMAIN-SUFFIX,mirror.guzel.net.tr
@@ -1333,7 +1329,6 @@ payload:
 - DOMAIN,mirror.xtom.sg
 - DOMAIN,mirror.djvg.sg
 - DOMAIN,download.nus.edu.sg
-- DOMAIN,mirror.nus.edu.sg
 - DOMAIN,kambing.uu.sg
 - DOMAIN,mirror.0x.sg
 - DOMAIN,mirror.accum.se
@@ -1488,7 +1483,6 @@ payload:
 - DOMAIN,ftp.lanet.kr
 - DOMAIN,mirror.techlabs.co.kr
 - DOMAIN,blizzard.gcdn.cloudn.co.kr
-- DOMAIN,apache.tt.co.kr
 - DOMAIN,ftp.kaist.ac.kr
 - DOMAIN,mirror.sabay.com.kh
 - DOMAIN,mir.linux.kg
@@ -1502,7 +1496,7 @@ payload:
 - DOMAIN,mirror.xtom.jp
 - DOMAIN,debian-mirror.sakura.ne.jp
 - DOMAIN,download.hikarifield.co.jp
-- DOMAIN,client.hikarifield.co.jp
+- DOMAIN,static.hikarifield.co.jp
 - DOMAIN,ftp.kddlabs.co.jp
 - DOMAIN,ftp.sakura.ad.jp
 - DOMAIN,ftp.tsukuba.wide.ad.jp
@@ -1780,8 +1774,13 @@ payload:
 - DOMAIN,ftp.cvut.cz
 - DOMAIN,ftp.sh.cvut.cz
 - DOMAIN,ftp.zcu.cz
-- DOMAIN,mirrors.nic.cz
+- DOMAIN,archlinux.nic.cz
+- DOMAIN,opensuse.nic.cz
+- DOMAIN,ubuntu.nic.cz
+- DOMAIN,fedora.nic.cz
 - DOMAIN,debian.nic.cz
+- DOMAIN,centos.nic.cz
+- DOMAIN,cran.nic.cz
 - DOMAIN,mirror.dkm.cz
 - DOMAIN,mirror.library.ucy.ac.cy
 - DOMAIN,mirrors.ucr.ac.cr
