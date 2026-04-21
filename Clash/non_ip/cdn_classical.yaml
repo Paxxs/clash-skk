@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-04-19T12:42:31.857Z
-# Size: 4451
+# Last Updated: 2026-04-21T03:37:05.215Z
+# Size: 4452
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -1139,7 +1139,7 @@ payload:
 - DOMAIN,js.verygoodvault.com
 - DOMAIN,cdn.tvpagewidgets.com
 - DOMAIN-SUFFIX,transcend-cdn.com
-- DOMAIN,tile.thunderforest.com
+- DOMAIN-SUFFIX,tile.thunderforest.com
 - DOMAIN-SUFFIX,bundle.thimatic-apps.com
 - DOMAIN,cdn.thewirecutter.com
 - DOMAIN,files.thehackernews.com
@@ -1620,6 +1620,7 @@ payload:
 - DOMAIN,statics.streamable.com
 - DOMAIN-SUFFIX,sthlstatic.com
 - DOMAIN,cdn.staticswin.com
+- DOMAIN,tiles-eu.stadiamaps.com
 - DOMAIN,tiles.stadiamaps.com
 - DOMAIN,s3.stackabuse.com
 - DOMAIN,img.sparknotes.com
