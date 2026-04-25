@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-04-24T03:31:11.843Z
-# Size: 4453
+# Last Updated: 2026-04-25T10:44:04.492Z
+# Size: 4457
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -354,6 +354,9 @@ payload:
 - DOMAIN,proxy.spigotmc.org
 - DOMAIN-SUFFIX,rollupjs.org
 - DOMAIN-SUFFIX,recharts.org
+- DOMAIN,gis.pinkbike.org
+- DOMAIN,ep1.pinkbike.org
+- DOMAIN,es.pinkbike.org
 - DOMAIN-SUFFIX,parceljs.org
 - DOMAIN,static.opensuse.org
 - DOMAIN,open-vsx.org
@@ -2908,6 +2911,7 @@ payload:
 - DOMAIN,website-prod.cache.wpscdn.com
 - DOMAIN,frontend-apps.workos.com
 - DOMAIN,cdn.workos.com
+- DOMAIN-SUFFIX,wklcdn.com
 - DOMAIN,embed-cloudfront.wistia.com
 - DOMAIN,embed-ssl.wistia.com
 - DOMAIN,fast.wistia.com
