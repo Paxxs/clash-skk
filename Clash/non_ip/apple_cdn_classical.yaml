@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Apple CDN
-# Last Updated: 2026-04-18T18:34:48.303Z
-# Size: 164
+# Last Updated: 2026-05-10T06:25:18.685Z
+# Size: 158
 #
 # This file contains Apple's domains using their China mainland CDN servers.
 #
@@ -14,6 +14,7 @@ payload:
 - DOMAIN-SUFFIX,images.apple.com.edgekey.net.globalredir.akadns.net
 - DOMAIN-SUFFIX,store.apple.com.edgekey.net.globalredir.akadns.net
 - DOMAIN-SUFFIX,www.apple.com.edgekey.net.globalredir.akadns.net
+- DOMAIN-SUFFIX,cl2.apple.com.edgekey.net.globalredir.akadns.net
 - DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
 - DOMAIN-SUFFIX,iphone-ld.origin-apple.com.akadns.net
 - DOMAIN-SUFFIX,cl5-cdn.origin-apple.com.akadns.net
@@ -28,10 +29,8 @@ payload:
 - DOMAIN-SUFFIX,init-p01st-lb.push-apple.com.akadns.net
 - DOMAIN-SUFFIX,init-p01md-lb.push-apple.com.akadns.net
 - DOMAIN-SUFFIX,updates-http.cdn-apple.com.akadns.net
-- DOMAIN-SUFFIX,pancake.cdn-apple.com.akadns.net
 - DOMAIN-SUFFIX,gspe19-2-cn-ssl.ls-apple.com.akadns.net
 - DOMAIN-SUFFIX,gspe19-cn.ls-apple.com.akadns.net
-- DOMAIN-SUFFIX,icloud-cdn.icloud.com.akadns.net
 - DOMAIN-SUFFIX,stocks-sparkline-lb.apple.com.akadns.net
 - DOMAIN-SUFFIX,swcatalog-cdn.apple.com.akadns.net
 - DOMAIN-SUFFIX,configuration.apple.com.akadns.net
@@ -41,9 +40,7 @@ payload:
 - DOMAIN-SUFFIX,swscan-cdn.apple.com.akadns.net
 - DOMAIN-SUFFIX,mesu-china.apple.com.akadns.net
 - DOMAIN-SUFFIX,clientflow.apple.com.akadns.net
-- DOMAIN-SUFFIX,ocsp2-lb.apple.com.akadns.net
 - DOMAIN-SUFFIX,mesu-cdn.apple.com.akadns.net
-- DOMAIN-SUFFIX,ocsp-lb.apple.com.akadns.net
 - DOMAIN-SUFFIX,swdist.apple.com.akadns.net
 - DOMAIN-SUFFIX,cds.apple.com.akadns.net
 - DOMAIN-SUFFIX,cdn-cn4.apple-mapkit.com
@@ -62,7 +59,6 @@ payload:
 - DOMAIN-SUFFIX,store.storeimages.cdn-apple.com
 - DOMAIN-SUFFIX,updates.cdn-apple.com
 - DOMAIN-SUFFIX,appleid.cdn-apple.com
-- DOMAIN-SUFFIX,icloud.cdn-apple.com
 - DOMAIN-SUFFIX,cstat.cdn-apple.com
 - DOMAIN-SUFFIX,ml.cdn-apple.com
 - DOMAIN-SUFFIX,is5-ssl.mzstatic.com
@@ -95,7 +91,6 @@ payload:
 - DOMAIN-SUFFIX,sh-pod2-smp-device.apple.com
 - DOMAIN-SUFFIX,stocks-sparkline.apple.com
 - DOMAIN-SUFFIX,devstreaming-cdn.apple.com
-- DOMAIN-SUFFIX,reserve-prime.apple.com
 - DOMAIN-SUFFIX,itunesconnect.apple.com
 - DOMAIN-SUFFIX,devimages-cdn.apple.com
 - DOMAIN-SUFFIX,configuration.apple.com
@@ -143,8 +138,6 @@ payload:
 - DOMAIN-SUFFIX,seed-sequoia.siri.apple.com
 - DOMAIN-SUFFIX,probe.siri.apple.com
 - DOMAIN-SUFFIX,seed.siri.apple.com
-- DOMAIN-SUFFIX,init-s01st.push.apple.com
-- DOMAIN-SUFFIX,init-p01st.push.apple.com
 - DOMAIN-SUFFIX,pba0.apple.com
 - DOMAIN-SUFFIX,ocsp.apple.com
 - DOMAIN-SUFFIX,mesu.apple.com
@@ -168,6 +161,7 @@ payload:
 - DOMAIN-SUFFIX,gspe19-cn.ls.apple.com
 - DOMAIN-SUFFIX,gsp13-cn.ls.apple.com
 - DOMAIN-SUFFIX,gsp12-cn.ls.apple.com
+- DOMAIN-SUFFIX,gsp11-cn.ls.apple.com
 - DOMAIN-SUFFIX,gsp5-cn.ls.apple.com
 - DOMAIN-SUFFIX,gsp4-cn.ls.apple.com
 - DOMAIN-SUFFIX,static.gc.apple.com

@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Large Files Hosting Domains
-# Last Updated: 2026-05-04T13:44:04.887Z
-# Size: 1919
+# Last Updated: 2026-05-10T07:35:31.917Z
+# Size: 1939
 #
 # This file contains domains for software updating & large file hosting.
 #########################################
@@ -106,6 +106,7 @@ payload:
 - DOMAIN,mirror2.tuxinator.org
 - DOMAIN,static.rust-lang.org
 - DOMAIN,mirrors.rpmfusion.org
+- DOMAIN,mirror.pyratelan.org
 - DOMAIN-SUFFIX,packagist.org
 - DOMAIN-SUFFIX,ossplanet.org
 - DOMAIN,mirrorbits.lineageos.org
@@ -154,11 +155,11 @@ payload:
 - DOMAIN,ftp.osuosl.org
 - DOMAIN,cdn.oneget.org
 - DOMAIN,lzip.nongnu.org
+- DOMAIN,mirror2.krfoss.org
 - DOMAIN,mirror.krfoss.org
 - DOMAIN,http.krfoss.org
 - DOMAIN,mirrors.kernel.org
-- DOMAIN,mirrors.edge.kernel.org
-- DOMAIN,eu.edge.kernel.org
+- DOMAIN-SUFFIX,edge.kernel.org
 - DOMAIN,mirrors.us.kernel.org
 - DOMAIN,plugins-artifacts.gradle.org
 - DOMAIN,repo.gradle.org
@@ -229,6 +230,7 @@ payload:
 - DOMAIN,deb.sury.org
 - DOMAIN-SUFFIX,pypi.org
 - DOMAIN,ftp.ktug.org
+- DOMAIN,archive-4.kali.org
 - DOMAIN,cdimage.kali.org
 - DOMAIN,archive.kali.org
 - DOMAIN,http.kali.org
@@ -362,6 +364,7 @@ payload:
 - DOMAIN,blzddist2-a.akamaihd.net
 - DOMAIN,blzddist1-a.akamaihd.net
 - DOMAIN,origin-a.akamaihd.net
+- DOMAIN,mirror.wonchan.net
 - DOMAIN-SUFFIX,file.core.windows.net
 - DOMAIN-SUFFIX,blob.core.windows.net
 - DOMAIN,mirror.vorboss.net
@@ -417,6 +420,7 @@ payload:
 - DOMAIN,mirror-hk.koddos.net
 - DOMAIN,mirror.koddos.net
 - DOMAIN,mirrors.hopbox.net
+- DOMAIN,mirror.hemino.net
 - DOMAIN-SUFFIX,mirror.gtcomm.net
 - DOMAIN,mirrors.glesys.net
 - DOMAIN,cloudfront.debian.net
@@ -560,6 +564,7 @@ payload:
 - DOMAIN,ubuntu.securedservers.com
 - DOMAIN,mirror.raiolanetworks.com
 - DOMAIN,mirror2.evolution-host.com
+- DOMAIN,mirror.cspacehostings.com
 - DOMAIN,ctldl.windowsupdate.com
 - DOMAIN,mirror.mythic-beasts.com
 - DOMAIN-SUFFIX,mvnrepository.com
@@ -579,7 +584,10 @@ payload:
 - DOMAIN-SUFFIX,steamcontent.com
 - DOMAIN,downloads.lemonsqueezy.com
 - DOMAIN-SUFFIX,epicgamescdn.com
+- DOMAIN,mirror.us.cdn-perfprod.com
 - DOMAIN,mirror.nl.cdn-perfprod.com
+- DOMAIN,mirror.fr.cdn-perfprod.com
+- DOMAIN,mirror.es.cdn-perfprod.com
 - DOMAIN-SUFFIX,mirror.wearetriple.com
 - DOMAIN-SUFFIX,mirror.vhosting-it.com
 - DOMAIN,mirror.softaculous.com
@@ -990,6 +998,7 @@ payload:
 - DOMAIN-SUFFIX,allawnofs.com
 - DOMAIN,app-updates.agilebits.com
 - DOMAIN,cache.agilebits.com
+- DOMAIN,mirror.africloud.com
 - DOMAIN,mirror.eu.4psacloud.com
 - DOMAIN,downloads.1password.com
 - DOMAIN,c.1password.com
@@ -1029,6 +1038,7 @@ payload:
 - DOMAIN,download.mikrotik.com
 - DOMAIN,downloads.majestic.com
 - DOMAIN,mirror.linkdata.com
+- DOMAIN,mirror2.keiminem.com
 - DOMAIN,mirror.keiminem.com
 - DOMAIN,mirror.us-ny2.kamatera.com
 - DOMAIN,mirror.us-tx.kamatera.com
@@ -1177,6 +1187,7 @@ payload:
 - DOMAIN,skimdb.npmjs.com
 - DOMAIN,mirror.mvizn.com
 - DOMAIN,mirror.kakao.com
+- DOMAIN-SUFFIX,mirror.ionos.com
 - DOMAIN,free.hands.com
 - DOMAIN,addins.deepl.com
 - DOMAIN,download.cpuid.com
@@ -1322,6 +1333,7 @@ payload:
 - DOMAIN,cpan.lnx.sk
 - DOMAIN-SUFFIX,apache.si
 - DOMAIN,ftp.arnes.si
+- DOMAIN,kali.darklab.sh
 - DOMAIN,binaries.prisma.sh
 - DOMAIN,repo.carbon.sh
 - DOMAIN-SUFFIX,temp.sh
@@ -1409,7 +1421,7 @@ payload:
 - DOMAIN,mirror.2degrees.nz
 - DOMAIN-SUFFIX,mega.nz
 - DOMAIN,ubuntu.btit.nz
-- DOMAIN,mirror.fsmg.org.nz
+- DOMAIN-SUFFIX,fsmg.org.nz
 - DOMAIN,cpan.inspire.net.nz
 - DOMAIN-SUFFIX,mega.co.nz
 - DOMAIN,ucmirror.canterbury.ac.nz
@@ -1470,6 +1482,7 @@ payload:
 - DOMAIN,centos-stream.koyanet.lv
 - DOMAIN,ubuntu.koyanet.lv
 - DOMAIN,debian.koyanet.lv
+- DOMAIN,kali.koyanet.lv
 - DOMAIN,ftp.linux.edu.lv
 - DOMAIN-SUFFIX,mirror.root.lu
 - DOMAIN-SUFFIX,mirror.serveriai.lt
@@ -1484,6 +1497,7 @@ payload:
 - DOMAIN,repo.morgan.kr
 - DOMAIN-SUFFIX,rsync.kr
 - DOMAIN,ftp.lanet.kr
+- DOMAIN,mirror.wane.kr
 - DOMAIN,mirror.techlabs.co.kr
 - DOMAIN,blizzard.gcdn.cloudn.co.kr
 - DOMAIN,ftp.kaist.ac.kr
@@ -1533,6 +1547,7 @@ payload:
 - DOMAIN,packagecloud.io
 - DOMAIN,assets-production.packagecloud.io
 - DOMAIN,mirror.realcompute.io
+- DOMAIN,xsrv.moratelindo.io
 - DOMAIN,download.ameliorated.io
 - DOMAIN-SUFFIX,dl.elementary.io
 - DOMAIN,docker.cloudsmith.io
@@ -1603,6 +1618,7 @@ payload:
 - DOMAIN,cdn.repo.cloudeka.id
 - DOMAIN,mirror-gw.elastis.id
 - DOMAIN,mr.heru.id
+- DOMAIN,mirror.primelink.net.id
 - DOMAIN,kartolo.sby.datautama.net.id
 - DOMAIN,cpan.pesat.net.id
 - DOMAIN,mirror.papua.go.id
@@ -1670,6 +1686,7 @@ payload:
 - DOMAIN,www-ftp.lip6.fr
 - DOMAIN,ftp.lip6.fr
 - DOMAIN,mirror.ibcp.fr
+- DOMAIN,ftp.free.fr
 - DOMAIN,ftp.ec-m.fr
 - DOMAIN-SUFFIX,nic.funet.fi
 - DOMAIN,ftp.funet.fi
@@ -1915,8 +1932,11 @@ payload:
 - DOMAIN,ubuntu.zero.com.ar
 - DOMAIN,apache.mesi.com.ar
 - DOMAIN,mirrors.teamcloud.am
+- DOMAIN,kali.itsec.am
 - DOMAIN,mirrors.asnet.am
 - DOMAIN,updates.64gr.am
+- DOMAIN-SUFFIX,mirror2.gnc.am
+- DOMAIN-SUFFIX,mirror1.gnc.am
 - DOMAIN-SUFFIX,mirror.gnc.am
 - DOMAIN-SUFFIX,mirror.homacloud.ai
 - DOMAIN,downloads.claude.ai
