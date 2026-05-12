@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-05-05T16:21:47.782Z
-# Size: 4462
+# Last Updated: 2026-05-12T15:43:33.564Z
+# Size: 4466
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -305,7 +305,7 @@ payload:
 - DOMAIN-SUFFIX,qbittorrent.org
 - DOMAIN-SUFFIX,stream.publicradio.org
 - DOMAIN,play.publicradio.org
-- DOMAIN,tile.opentopomap.org
+- DOMAIN-SUFFIX,tile.opentopomap.org
 - DOMAIN,covers.openlibrary.org
 - DOMAIN,tiles.openfreemap.org
 - DOMAIN,media.hentaifreak.org
@@ -2979,6 +2979,7 @@ payload:
 - DOMAIN,web-assets.strava.com
 - DOMAIN,content-a.strava.com
 - DOMAIN,wre-assets.prod.mapping.strava.com
+- DOMAIN,tiles.strava.com
 - DOMAIN,cdn-1.strava.com
 - DOMAIN,cdn.stonly.com
 - DOMAIN-SUFFIX,tile.stamen.com
@@ -3829,6 +3830,7 @@ payload:
 - DOMAIN,cdn.mida.so
 - DOMAIN,images.spr.so
 - DOMAIN-SUFFIX,cdn-zlib.sk
+- DOMAIN-SUFFIX,tiles.freemap.sk
 - DOMAIN-SUFFIX,registry.gitplac.si
 - DOMAIN-SUFFIX,gitpage.si
 - DOMAIN-SUFFIX,gitapp.si
@@ -4309,6 +4311,7 @@ payload:
 - DOMAIN,www.acgpix.de
 - DOMAIN,cdn.ionos.de
 - DOMAIN,tile.mtbmap.cz
+- DOMAIN,mapserver.mapy.cz
 - DOMAIN-SUFFIX,ipfs.slang.cx
 - DOMAIN-SUFFIX,zpi.cx
 - DOMAIN,assets.openalternative.co
@@ -4349,6 +4352,7 @@ payload:
 - DOMAIN-SUFFIX,erocdn.co
 - DOMAIN-SUFFIX,widget.clutch.co
 - DOMAIN,us-js.zonka.co
+- DOMAIN,cdn.videy.co
 - DOMAIN-SUFFIX,unpkg.co
 - DOMAIN,app-static.turtl.co
 - DOMAIN-SUFFIX,prcdn.co
