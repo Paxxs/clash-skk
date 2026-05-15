@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-05-14T09:28:31.353Z
-# Size: 4471
+# Last Updated: 2026-05-15T09:25:15.774Z
+# Size: 4476
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -1649,6 +1649,7 @@ payload:
 - DOMAIN-SUFFIX,cdn.serverable.com
 - DOMAIN-SUFFIX,sentry-cdn.com
 - DOMAIN,static-www.sendsafely.com
+- DOMAIN,app-static.sendsafely.com
 - DOMAIN,assets.sendinblue.com
 - DOMAIN-SUFFIX,sbcdnvideo.com
 - DOMAIN,resources.help.salesforce.com
@@ -2412,6 +2413,7 @@ payload:
 - DOMAIN,cdn2.edgedatg.com
 - DOMAIN,cdn1.edgedatg.com
 - DOMAIN-SUFFIX,ipfs.ecolatam.com
+- DOMAIN-SUFFIX,cdn.easyling.com
 - DOMAIN,vip.dytt-img.com
 - DOMAIN-SUFFIX,drivecdn.com
 - DOMAIN,cdn.dribbble.com
@@ -3641,6 +3643,9 @@ payload:
 - DOMAIN,img-en.fs.com
 - DOMAIN,media.fs.com
 - DOMAIN,genesis-cdn.ff.com
+- DOMAIN,cdn.studio.f5.com
+- DOMAIN-SUFFIX,tags.f5.com
+- DOMAIN,cdn.f5.com
 - DOMAIN,media.contentapi.ea.com
 - DOMAIN,cdn.mcr.ea.com
 - DOMAIN,pl.ea.com
