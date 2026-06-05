@@ -1,5 +1,5 @@
 # Sukka's Ruleset - Reject Non-IP
-# Last Updated: 2026-03-31T15:36:17.062Z
+# Last Updated: 2026-06-05T14:37:37.460Z
 # Size: 366
 #
 # The ruleset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
@@ -18,16 +18,17 @@
 #   - https://filters.adtidy.org/extension/ublock/filters/2_optimized.txt
 #   - https://filters.adtidy.org/extension/ublock/filters/3_optimized.txt
 #   - https://filters.adtidy.org/extension/ublock/filters/7_optimized.txt
+#   - https://raw.githubusercontent.com/cjx82630/cjxlist/master/cjx-annoyance.txt
 #   - https://raw.githubusercontent.com/easylist/easylist/gh-pages/easyprivacy.txt
-#   - https://ublockorigin.github.io/uAssets/thirdparties/easylist-cookies.txt
-#   - https://ublockorigin.github.io/uAssets/thirdparties/easylist-notifications.txt
-#   - https://ublockorigin.github.io/uAssetsCDN/filters/annoyances.min.txt
-#   - https://ublockorigin.github.io/uAssetsCDN/filters/badware.min.txt
-#   - https://ublockorigin.github.io/uAssetsCDN/filters/filters.min.txt
-#   - https://ublockorigin.github.io/uAssetsCDN/filters/privacy.min.txt
-#   - https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt
-#   - https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-annoyances.txt
-#   - https://ublockorigin.github.io/uAssetsCDN/thirdparties/easylist-newsletters.txt
+#   - https://ublockorigin.pages.dev/filters/annoyances.min.txt
+#   - https://ublockorigin.pages.dev/filters/badware.min.txt
+#   - https://ublockorigin.pages.dev/filters/filters.min.txt
+#   - https://ublockorigin.pages.dev/filters/privacy.min.txt
+#   - https://ublockorigin.pages.dev/filters/unbreak.min.txt
+#   - https://ublockorigin.pages.dev/thirdparties/easylist-annoyances.txt
+#   - https://ublockorigin.pages.dev/thirdparties/easylist-cookies.txt
+#   - https://ublockorigin.pages.dev/thirdparties/easylist-newsletters.txt
+#   - https://ublockorigin.pages.dev/thirdparties/easylist-notifications.txt
 #########################################
 payload:
 - DOMAIN-SUFFIX,data
