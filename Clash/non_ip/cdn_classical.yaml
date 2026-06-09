@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-06-08T06:14:39.123Z
-# Size: 4491
+# Last Updated: 2026-06-09T15:16:08.294Z
+# Size: 4498
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -393,6 +393,7 @@ payload:
 - DOMAIN,pcz.javidol.org
 - DOMAIN-SUFFIX,haproxy.org
 - DOMAIN-SUFFIX,graphql.org
+- DOMAIN,imgproxy.flathub.org
 - DOMAIN,web-static.archive.org
 - DOMAIN,image.ap-mail.org
 - DOMAIN-SUFFIX,99avcdn.org
@@ -509,6 +510,7 @@ payload:
 - DOMAIN,images.wurstclient.net
 - DOMAIN,images.wsjcommerce.net
 - DOMAIN,static.underhentai.net
+- DOMAIN,assets.transfernow.net
 - DOMAIN-SUFFIX,tapecontent.net
 - DOMAIN-SUFFIX,staticworld.net
 - DOMAIN-SUFFIX,staticstack.net
@@ -586,6 +588,7 @@ payload:
 - DOMAIN,edge-mobile-static.azureedge.net
 - DOMAIN,edgeassetservice.azureedge.net
 - DOMAIN-SUFFIX,edgestorewebcdn.azureedge.net
+- DOMAIN,catalogartifact.azureedge.net
 - DOMAIN,xpaywalletcdn.azureedge.net
 - DOMAIN,claritystatic.azureedge.net
 - DOMAIN,mobilecenter.azureedge.net
@@ -618,6 +621,7 @@ payload:
 - DOMAIN,cdn.viafoura.net
 - DOMAIN-SUFFIX,turboimg.net
 - DOMAIN-SUFFIX,tildacdn.net
+- DOMAIN-SUFFIX,t-assets.net
 - DOMAIN,cdn.pi.spectrum.net
 - DOMAIN-SUFFIX,smassets.net
 - DOMAIN-SUFFIX,sitescdn.net
@@ -1532,6 +1536,7 @@ payload:
 - DOMAIN,cdn.fluidplayer.com
 - DOMAIN-SUFFIX,firebaseapp.com
 - DOMAIN,google-ohttp-relay-safebrowsing.fastly-edge.com
+- DOMAIN,mozilla-ohttp.fastly-edge.com
 - DOMAIN,ohttp-relay1.fastly-edge.com
 - DOMAIN,live.fanmingming.com
 - DOMAIN,assets.embeddables.com
@@ -2428,6 +2433,7 @@ payload:
 - DOMAIN,cdn-node.diskpart.com
 - DOMAIN,cacerts.digicert.com
 - DOMAIN,ocsp.digicert.com
+- DOMAIN,crl3.digicert.com
 - DOMAIN,avatars.dicebear.com
 - DOMAIN,api.dicebear.com
 - DOMAIN-SUFFIX,dditscdn.com
@@ -3444,6 +3450,7 @@ payload:
 - DOMAIN,corp-backend.brevo.com
 - DOMAIN,assets.brevo.com
 - DOMAIN,safebrowsing.brave.com
+- DOMAIN,variations.brave.com
 - DOMAIN,imgs.search.brave.com
 - DOMAIN,cdn.search.brave.com
 - DOMAIN,static.bodor.com
