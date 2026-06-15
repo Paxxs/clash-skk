@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-06-09T15:16:08.294Z
-# Size: 4498
+# Last Updated: 2026-06-15T02:41:55.598Z
+# Size: 4501
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -3181,6 +3181,7 @@ payload:
 - DOMAIN,static.gmgard.com
 - DOMAIN-SUFFIX,glbimg.com
 - DOMAIN,tuf-repo.github.com
+- DOMAIN,cafe.github.com
 - DOMAIN,raw.github.com
 - DOMAIN-SUFFIX,pkg.github.com
 - DOMAIN,assets.genius.com
@@ -3236,6 +3237,7 @@ payload:
 - DOMAIN,static.beebom.com
 - DOMAIN,www.bbthat.com
 - DOMAIN-SUFFIX,bblcdn.com
+- DOMAIN,static.captcha.awswaf.com
 - DOMAIN-SUFFIX,avximg.com
 - DOMAIN,tiledbasemaps.arcgis.com
 - DOMAIN,tiles.arcgis.com
@@ -4020,6 +4022,7 @@ payload:
 - DOMAIN-SUFFIX,cdn.nimg.jp
 - DOMAIN,i.gzn.jp
 - DOMAIN,tiles.gsj.jp
+- DOMAIN-SUFFIX,img.gmo.jp
 - DOMAIN,nav.yumenosora.co.jp
 - DOMAIN,web-assets.zendesk.co.jp
 - DOMAIN,cdn.rex.contents.rakuten.co.jp
