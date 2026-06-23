@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-06-23T02:39:25.856Z
-# Size: 4516
+# Last Updated: 2026-06-23T12:52:02.130Z
+# Size: 4517
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -2637,7 +2637,9 @@ payload:
 - DOMAIN,cdn-rdstaticassets.readdle.com
 - DOMAIN-SUFFIX,ravenjs.com
 - DOMAIN,static.rakuten.com
+- DOMAIN,luminaire.railway.com
 - DOMAIN,devicons.railway.com
+- DOMAIN,cms.railway.com
 - DOMAIN-SUFFIX,rackcdn.com
 - DOMAIN,cdn.quadpay.com
 - DOMAIN-SUFFIX,pxlecdn.com
@@ -2646,8 +2648,7 @@ payload:
 - DOMAIN,cdn.privacy.com
 - DOMAIN,app-static-prod.posthog.com
 - DOMAIN,app-static.eu.posthog.com
-- DOMAIN,us-assets.i.posthog.com
-- DOMAIN,eu-assets.i.posthog.com
+- DOMAIN-SUFFIX,i.posthog.com
 - DOMAIN,cdn77-t.pornoxo.com
 - DOMAIN,cdn77.pornoxo.com
 - DOMAIN,pics.pornfhd.com
