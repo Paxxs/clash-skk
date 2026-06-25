@@ -1,11 +1,12 @@
 # Sukka's Ruleset - Reject No Drop
-# Last Updated: 2026-04-12T09:54:14.732Z
-# Size: 43
+# Last Updated: 2026-06-25T13:01:21.690Z
+# Size: 44
 #
 # This file This file contains rules for domain should be used with REJECT-NO-DROP policy.
 #########################################
 payload:
 - DOMAIN-SUFFIX,ppio.cloud
+- DOMAIN-SUFFIX,bvmlt.top
 - DOMAIN-SUFFIX,bsccdn.net
 - DOMAIN-SUFFIX,yfp2p.net
 - DOMAIN-SUFFIX,yfcdn.net

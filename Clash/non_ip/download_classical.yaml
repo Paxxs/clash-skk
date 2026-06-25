@@ -1,12 +1,13 @@
 # Sukka's Ruleset - Large Files Hosting Domains
-# Last Updated: 2026-06-24T05:48:35.636Z
-# Size: 1954
+# Last Updated: 2026-06-25T13:01:22.045Z
+# Size: 1956
 #
 # This file contains domains for software updating & large file hosting.
 #########################################
 payload:
 - DOMAIN-SUFFIX,fnbuilds.services
 - DOMAIN,ossmirror.mycloud.services
+- DOMAIN,dl.orangefox.download
 - DOMAIN-SUFFIX,nitro.download
 - DOMAIN-SUFFIX,kali.download
 - DOMAIN,mirror.kumi.systems
@@ -1488,6 +1489,7 @@ payload:
 - DOMAIN,ubuntu.dts.mg
 - DOMAIN,mirror.klaus-uwe.me
 - DOMAIN-SUFFIX,mirrors.cicku.me
+- DOMAIN-SUFFIX,dl.twrp.me
 - DOMAIN,releases.obsidian.md
 - DOMAIN,mirror.ihost.md
 - DOMAIN,mirror.marwan.ma
