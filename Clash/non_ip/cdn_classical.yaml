@@ -1,6 +1,6 @@
 # Sukka's Ruleset - CDN Domains
-# Last Updated: 2026-06-25T13:01:22.042Z
-# Size: 4524
+# Last Updated: 2026-06-29T11:00:23.923Z
+# Size: 4526
 #
 # This file contains object storage and static assets CDN domains.
 #########################################
@@ -3740,6 +3740,7 @@ payload:
 - DOMAIN,video.bsky.app
 - DOMAIN-SUFFIX,cdn.bsky.app
 - DOMAIN-SUFFIX,web.app
+- DOMAIN,widget.rss.app
 - DOMAIN,images.rss.app
 - DOMAIN-SUFFIX,csb.app
 - DOMAIN,cdn.7tv.app
@@ -4266,6 +4267,7 @@ payload:
 - DOMAIN,sdk.gleap.io
 - DOMAIN,cdn.filen.io
 - DOMAIN-SUFFIX,ipfs.decoo.io
+- DOMAIN,changelog-widget.canny.io
 - DOMAIN,assets2.canny.io
 - DOMAIN,assets.canny.io
 - DOMAIN,cdn.bogos.io
