@@ -1,6 +1,6 @@
 # Sukka's Ruleset - Reject Non-IP
-# Last Updated: 2026-06-05T14:37:37.460Z
-# Size: 366
+# Last Updated: 2026-06-30T09:28:39.177Z
+# Size: 367
 #
 # The ruleset supports AD blocking, tracking protection, privacy protection, anti-phishing, anti-mining
 #
@@ -300,6 +300,7 @@ payload:
 - DOMAIN-KEYWORD,adobemarketing.
 - DOMAIN-KEYWORD,adtarget.
 - DOMAIN-KEYWORD,iqmetrics.
+- DOMAIN-KEYWORD,ebis-tracking.
 - DOMAIN-KEYWORD,load.tracking.
 - DOMAIN-KEYWORD,-mktg.vodafone.com
 - DOMAIN-KEYWORD,-business.vodafone.com
