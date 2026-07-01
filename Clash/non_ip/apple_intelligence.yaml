@@ -1,12 +1,12 @@
 # Sukka's Ruleset - Apple Intelligence
-# Last Updated: 2026-03-10T14:56:40.479Z
+# Last Updated: 2026-06-30T21:42:09.829Z
 # Size: 6
 #
 # This file contains domains of OpenAI, Claude.
 #########################################
 payload:
-- DOMAIN,apple-relay.fastly-edge.com
-- DOMAIN,apple-relay.cloudflare.com
 - DOMAIN,cp4.cloudflare.com
 - DOMAIN,apple-relay.apple.com
 - DOMAIN,gspe1-ssl.ls.apple.com
+- DOMAIN,apple-relay.cloudflare.com
+- DOMAIN,apple-relay.fastly-edge.com

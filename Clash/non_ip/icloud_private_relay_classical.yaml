@@ -1,13 +1,13 @@
 # Sukka's Ruleset - iCloud Private Relay
-# Last Updated: 2026-03-10T14:56:40.469Z
+# Last Updated: 2026-06-30T21:42:09.810Z
 # Size: 7
 #
 # This file contains domains for iCloud Private Relay Endpoint.
 #########################################
 payload:
-- DOMAIN,mask.apple-dns.net
-- DOMAIN,canary.mask.apple-dns.net
-- DOMAIN,mask-canary.icloud.com
-- DOMAIN,mask-api.icloud.com
-- DOMAIN,mask-h2.icloud.com
 - DOMAIN,mask.icloud.com
+- DOMAIN,mask-h2.icloud.com
+- DOMAIN,mask.apple-dns.net
+- DOMAIN,mask-api.icloud.com
+- DOMAIN,mask-canary.icloud.com
+- DOMAIN,canary.mask.apple-dns.net

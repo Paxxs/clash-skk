@@ -1,16 +1,16 @@
 # Sukka's Ruleset - Stream Services: Europe
-# Last Updated: 2026-03-10T14:56:40.271Z
+# Last Updated: 2026-06-30T21:42:09.495Z
 # Size: 9
 #
 # - ITV
 # - BBC
 #########################################
 payload:
-- DOMAIN,itvpnpmobile-a.akamaihd.net
-- DOMAIN,bbc.mp-pxcdn.com
 - DOMAIN-SUFFIX,itv.com
-- DOMAIN-SUFFIX,tvlicensing.co.uk
-- DOMAIN-SUFFIX,bbci.co.uk
 - DOMAIN-SUFFIX,bbc.co.uk
+- DOMAIN-SUFFIX,bbci.co.uk
+- DOMAIN,bbc.mp-pxcdn.com
+- DOMAIN-SUFFIX,tvlicensing.co.uk
+- DOMAIN,itvpnpmobile-a.akamaihd.net
 - DOMAIN-KEYWORD,bbcfmt
 - DOMAIN-KEYWORD,uk-live
