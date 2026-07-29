@@ -1,6 +1,6 @@
 # Sukka's Ruleset - General Global Services
-# Last Updated: 2026-06-30T21:42:09.654Z
-# Size: 1265
+# Last Updated: 2026-07-29T02:59:04.734Z
+# Size: 1268
 #
 # This file contains rules for services that are NOT available inside the Mainland China.
 #########################################
@@ -287,6 +287,7 @@ payload:
 - DOMAIN-SUFFIX,storj.io
 - DOMAIN-SUFFIX,t66y.com
 - DOMAIN-SUFFIX,time.com
+- DOMAIN-SUFFIX,tmdb.org
 - DOMAIN-SUFFIX,trakt.tv
 - DOMAIN-SUFFIX,twimg.co
 - DOMAIN-SUFFIX,v2ex.com
@@ -444,8 +445,10 @@ payload:
 - DOMAIN-SUFFIX,apk-dl.com
 - DOMAIN-SUFFIX,apnews.com
 - DOMAIN-SUFFIX,archive.li
+- DOMAIN-SUFFIX,atmeta.com
 - DOMAIN-SUFFIX,avtoday.io
 - DOMAIN-SUFFIX,aweber.com
+- DOMAIN-SUFFIX,bangumi.tv
 - DOMAIN-SUFFIX,bet365.com
 - DOMAIN-SUFFIX,binance.cc
 - DOMAIN-SUFFIX,binance.me
