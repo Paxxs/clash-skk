@@ -1,5 +1,5 @@
 # Sukka's Ruleset - Apple CDN
-# Last Updated: 2026-06-30T21:42:10.058Z
+# Last Updated: 2026-07-31T16:18:57.222Z
 # Size: 159
 #
 # This file contains Apple's domains using their China mainland CDN servers.
@@ -8,6 +8,7 @@
 #  - https://github.com/felixonmars/dnsmasq-china-list
 #########################################
 payload:
+# unsupported domain rule: 7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
 - DOMAIN-SUFFIX,xp.apple.com
 - DOMAIN-SUFFIX,cds.apple.com
 - DOMAIN-SUFFIX,cl1.apple.com
