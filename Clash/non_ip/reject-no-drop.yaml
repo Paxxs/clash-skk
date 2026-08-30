@@ -1,10 +1,10 @@
 # Sukka's Ruleset - Reject No Drop
-# Last Updated: 2026-08-05T12:33:04.426Z
-# Size: 44
+# Last Updated: 2026-08-30T07:31:52.265Z
+# Size: 45
 #
 # This file This file contains rules for domain should be used with REJECT-NO-DROP policy.
 #
-# $content-hash-v1$:qmG9ifRaGX-sdXiRKh1fhsilFBBRGr6oIBcpQwqB5HQ$
+# $content-hash-v1$:BY-ELU5XA8bpQYNv68W30a6ufn7YTY05Fn4xpxpJA44$
 #########################################
 payload:
 - DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
@@ -51,3 +51,4 @@ payload:
 - DOMAIN-WILDCARD,dyp2p-*.douyucdn.cn
 - DOMAIN-WILDCARD,p2plive-*.douyucdn.cn
 - DOMAIN-WILDCARD,stun*.douyucdn.cn
+- DOMAIN-WILDCARD,upos-sz-302*.bilivideo.com
